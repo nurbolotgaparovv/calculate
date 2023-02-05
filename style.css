@@ -1,0 +1,96 @@
+:root {
+    --lenghBtn: 55px;
+    --marginCalBtn: 4px;
+}
+
+
+
+body {
+    background-color: aqua;
+    width: 99vw;
+    height: 98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    --btn:var(--lenghBtn);
+    background-color: #1d1111;
+    width: calc(var(--btn) * 5 + 85px);
+    height: 531px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+.display {
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+#displayValue {
+    background-color: #2d2c2c;
+    border: none;
+    border-radius: 25px;
+    width: 179%;
+    height: 119px;
+    color: white;
+    outline: none;
+    font-family:"Roboto Light", sans-serif, "Yekan" ;
+    font-size: 57px;
+    font-weight: 100;
+    padding-left: 25px;
+}
+
+.calculator {
+    background-color: #19191a;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.column {
+    width: 93%;
+    height: 75%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonCal {
+    border-radius: 50px;
+    width: var(--lenghBtn);
+    height: var(--lenghBtn);
+    font-size: 35px;
+    background-color: #3d3434;
+    border: none;
+    color: aqua;
+    cursor: pointer;
+    margin: 0 var(--marginCalBtn);
+}
+.clear, .zero, .equal{
+    width: calc(calc(var(--lenghBtn) * 2) + calc(var(--marginCalBtn) * 3));
+}
+.btRow1 {
+    background-color: rgba(133, 123, 128, 0.68);
+}
+.arithmetic {
+    background-color: #77d736;
+    color: #444242;
+}
+.abs {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 1px 0 0;
+}
+

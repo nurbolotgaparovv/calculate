@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate Math Fanction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <form action="" class="calculator">
+        <div class="display">
+            <label for="displayValue"></label>
+            <input type="text" name="display" id="displayValue" placeholder="0">
+        </div>
+        <div class="column">
+            <div class="row row1">
+                <input class="buttonCal clear btRow1" type="button" name="AC" value="C" onclick="clearValue()">
+                <input class="buttonCal btRow1" type="button" name="percent" value="%" onclick="mathCal('percent')">
+                <input class="buttonCal arithmetic" type="button" name="division" value="/" onclick="addToCal(division.value)">
+                <input class="buttonCal arithmetic sqrt" type="button" name="sqrt" value="&#8730;" onclick="mathCal('sqrt')">
+
+            </div>
+            <div class="row row2">
+                <input class="buttonCal btRow2" type="button" name="n7" value="7" onclick="addToCal(n7.value)">
+                <input class="buttonCal btRow2" type="button" name="n8" value="8" onclick="addToCal(n8.value)">
+                <input class="buttonCal btRow2" type="button" name="n9" value="9" onclick="addToCal(n9.value)">
+                <input class="buttonCal arithmetic multiplication" type="button" name="multiplication" value="*" onclick="addToCal(multiplication.value)">
+                <input class="buttonCal arithmetic" type="button" name="power" value="n&#739;" onclick="mathCal('pow')">
+            </div>
+            <div class="row row3">
+                <input class="buttonCal btRow3" type="button" name="n4" value="4" onclick="addToCal(n4.value)">
+                <input class="buttonCal btRow3" type="button" name="n5" value="5" onclick="addToCal(n5.value)">
+                <input class="buttonCal btRow3" type="button" name="n6" value="6" onclick="addToCal(n6.value)">
+                <input class="buttonCal arithmetic" type="button" name="minus" value="-" onclick="addToCal(minus.value)">
+                <input class="buttonCal arithmetic" type="button" name="Rounding" value="&#1147;" onclick="mathCal('round')">
+            </div>
+            <div class="row row4">
+                <input class="buttonCal btRow4" type="button" name="n1" value="1" onclick="addToCal(n1.value)">
+                <input class="buttonCal btRow4" type="button" name="n2" value="2" onclick="addToCal(n2.value)">
+                <input class="buttonCal btRow4" type="button" name="n3" value="3" onclick="addToCal(n3.value)">
+                <input class="buttonCal arithmetic" type="button" name="plus" value="+" onclick="addToCal(plus.value)">
+                <input class="buttonCal arithmetic abs" type="button" name="Absolute value" value="|ABS|" onclick="mathCal('abs')">
+            </div>
+            <div class="row row5">
+                <input class="buttonCal btRow5 zero" type="button" name="n0" value="0" onclick="addToCal(n0.value)">
+                <input class="buttonCal btRow5" type="button" name="point" value="." onclick="addToCal(point.value)">
+                <input class="buttonCal arithmetic equal" type="button" name="Equal" value="=" onclick="equal(Equal.value)">
+            </div>
+        </div>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
